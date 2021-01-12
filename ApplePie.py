@@ -49,10 +49,25 @@ bowl3.add(Sugar.take(grams=150))
 dish=PieDish.use()
 fridge.take()
 dish.add(bowl2.take('3/4'))
-dish.add(bow)
+dish.add(bowl3.take())
+dish.add(bowl2.take('1/4'))
 
-Rosemary.taste(bowl3)
+bowl4=Bowl.use()
+egg=Egg.take()
+egg.crack()
+bowl4.add(egg)
+bowl4.mix()
 
+dish.add(bowl4.take())
+dish.add(Sugar.take(grams=6))
+dish.add(lemonzest)
+
+oven.add(dish)
+oven.bake(minutes=60)
+pie=dish.take()
+plate = Plate.use()
+plate.add(pie)
+Rosemary.serve(pie)
 
 
 
