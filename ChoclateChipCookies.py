@@ -40,7 +40,7 @@ for i in range(16):
 #Bake the dough:
 oven.add(tray)
 oven.bake(minutes= 10)
-#Take out of the oven and serve:
+#Take out of the oven and serve to friends and family:
 cookies=tray.take()
 plate = Plate.use()
 plate.add(cookies)
